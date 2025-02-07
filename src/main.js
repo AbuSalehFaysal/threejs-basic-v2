@@ -46,7 +46,6 @@ function animate() {
     requestAnimationFrame(animate);
     dodecahedron.rotation.x += 0.01;
     dodecahedron.rotation.y += 0.01;
-
     box.rotation.y += 0.05;
     controls.update();
     renderer.render(scene, camera);
@@ -58,7 +57,6 @@ window.addEventListener('resize', () => {
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
 });
-
 animate();
 
 
